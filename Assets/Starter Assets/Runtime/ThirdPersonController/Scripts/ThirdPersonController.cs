@@ -79,7 +79,7 @@ namespace StarterAssets
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
         // Meow edit, try to switch to the second camera mode
-        private float _cameraFollowRotationVelocity;
+        // private float _cameraFollowRotationVelocity;
         // Meow edit end
 
         // player
@@ -206,14 +206,14 @@ namespace StarterAssets
             }
 
             //meow add code
-            if(_input.move != Vector2.zero) {
-                _cinemachineTargetYaw = Mathf.SmoothDampAngle(
-                    _cinemachineTargetYaw,
-                    transform.eulerAngles.y,
-                    ref _cameraFollowRotationVelocity,
-                    0.3f
-                    );
-            }
+            // if(_input.move != Vector2.zero) {
+            //     _cinemachineTargetYaw = Mathf.SmoothDampAngle(
+            //         _cinemachineTargetYaw,
+            //         transform.eulerAngles.y,
+            //         ref _cameraFollowRotationVelocity,
+            //         0.3f
+            //         );
+            // }
             //meow end
 
             // clamp our rotations so our values are limited 360 degrees
